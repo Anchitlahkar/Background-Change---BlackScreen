@@ -41,7 +41,7 @@ while capture.isOpened():
     lower_black = np.array([0, 0, 0])
     upper_black = np.array([104, 153, 140])
 
-    mask = cv2.inRange(hsv,lower_black,upper_black)
+    mask = cv2.inRange(frame,lower_black,upper_black)
 
 
     res = cv2.bitwise_and(frame,frame,mask=mask)
