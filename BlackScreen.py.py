@@ -39,7 +39,7 @@ while capture.isOpened():
 
 
     lower_black = np.array([0, 0, 0])
-    upper_black = np.array([104, 153, 140])
+    upper_black = np.array([94, 133, 60])
 
     mask = cv2.inRange(frame,lower_black,upper_black)
 
